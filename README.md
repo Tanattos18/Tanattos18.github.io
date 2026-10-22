@@ -5,7 +5,7 @@
   <img src="assets/logo-completo.png" alt="Akylla Studio" width="320">
 </picture>
 
-### Sites, páginas de vendas, lojas virtuais e sistemas sob medida
+### Sites, lojas virtuais, sistemas e automações para pequenos negócios
 
 Atendimento direto com o desenvolvedor · Goiânia/GO e todo o Brasil
 
@@ -26,6 +26,7 @@ Atendimento direto com o desenvolvedor · Goiânia/GO e todo o Brasil
 | **Site institucional** | Clínicas, escritórios, prestadores de serviço | R$ 1.800 |
 | **Loja virtual** | Lojas que querem vender online com loja própria | R$ 4.500 |
 | **Sistema sob medida** | Negócios que cresceram e se perderam nas planilhas | sob consulta |
+| **Automações e bots** | Atendimento, pedidos e tarefas no WhatsApp e no Telegram | sob consulta |
 | **Manutenção mensal** | Hospedagem, backups e pequenas alterações | R$ 150/mês |
 
 Valores e o que está incluso em cada um: [akyllastudio.github.io/#precos](https://akyllastudio.github.io/#precos)
@@ -46,6 +47,22 @@ Valores e o que está incluso em cada um: [akyllastudio.github.io/#precos](https
     </td>
   </tr>
 </table>
+
+## Soluções prontas para adaptar
+
+Produtos próprios que eu já desenvolvi e configuro com a marca e o jeito de trabalhar de cada cliente. Implantação mais rápida e custo menor do que começar do zero.
+
+| Solução | O que faz | Situação |
+|---|---|---|
+| **PetFlow** | Gestão para pet shops: clientes, animais, agenda, PDV, estoque e assinaturas | Pronto para implantar |
+| **SaaS Restaurante** | Pedidos pelo WhatsApp, cardápio por QR Code e tela de cozinha | Pronto para implantar |
+| **Painel Digital** | Atendimento, filas de espera e painéis de chamada em tempo real | Base adaptável |
+| **Burger Bot** | Pedidos de delivery pelo WhatsApp com PIX e aviso para a cozinha | Pronto para implantar |
+| **Affiliate Bot** | Publicação automática de ofertas da Shopee, Amazon e Mercado Livre no Telegram | Pronto para implantar |
+| **TikTok Pipeline** | Produção de vídeos curtos com IA, do roteiro à publicação | Pronto para implantar |
+| **AtlasOps AI** | Atendimento e automação com IA para pequenas e médias empresas | Em desenvolvimento |
+
+Peça uma demonstração: [WhatsApp](https://wa.me/5562991657619?text=Ol%C3%A1!%20Quero%20conhecer%20as%20solu%C3%A7%C3%B5es%20prontas%20da%20Akylla%20Studio.) · [ver no site](https://akyllastudio.github.io/#solucoes)
 
 ## Como funciona
 

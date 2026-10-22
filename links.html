@@ -199,6 +199,21 @@
     .elo::after { content: "→"; margin-left: auto; color: var(--texto-suave); transition: color .15s; }
     .elo:hover::after { color: var(--destaque); }
 
+    /* Soluções prontas (lista compacta) */
+    .sol__intro { color: var(--texto-suave); font-size: .85rem; margin: -4px 0 12px; }
+    .solucoes-bio { display: grid; gap: 8px; }
+    .sol {
+      display: flex; align-items: center; gap: 12px; text-decoration: none; padding: 12px 14px; border-radius: 16px;
+      background: rgba(18, 21, 29, .72); border: 1px solid rgba(255,255,255,.08); backdrop-filter: blur(12px);
+      transition: border-color .15s, transform .15s;
+    }
+    .sol:hover { border-color: rgba(var(--brilho), .7); transform: translateX(4px); }
+    .sol .elo__icone { width: 38px; height: 38px; }
+    .sol__txt { flex: 1; min-width: 0; }
+    .sol b { display: block; font-size: .95rem; font-weight: 600; }
+    .sol small { color: var(--texto-suave); font-size: .78rem; }
+    .serv--largo { grid-column: 1 / -1; }
+
     /* Rodapé */
     .rodape-bio { margin-top: 36px; text-align: center; color: var(--texto-suave); font-size: .8rem; }
     .rodape-bio img { width: 30px; margin: 0 auto 10px; opacity: .8; }
@@ -299,6 +314,7 @@
         <a href="#" data-servico="Página de vendas">Página de vendas</a>
         <a href="#" data-servico="Loja virtual">Loja virtual</a>
         <a href="#" data-servico="Sistema sob medida">Sistema</a>
+        <a href="#" data-servico="Automação ou bot">Automação / bot</a>
         <a href="#" data-servico="Ainda não sei, quero uma orientação">Ainda não sei</a>
       </div>
     </div>
@@ -326,6 +342,47 @@
       </a>
     </div>
 
+    <!-- ===== SOLUÇÕES PRONTAS ===== -->
+    <h2 class="titulo-secao entra">Soluções prontas para adaptar</h2>
+    <p class="sol__intro entra">Produtos que eu já desenvolvi e configuro com a sua marca. Toque para pedir uma demonstração.</p>
+    <div class="solucoes-bio">
+      <a href="#" class="sol entra" data-servico="Solução PetFlow (gestão para pet shop)">
+        <span class="elo__icone"><svg viewBox="0 0 24 24"><path d="M8 13c-2 1-3 3-2 5s4 2 6 1 4 0 6-1 1-4-2-5-3-2-4-2-8 0z"/><circle cx="6" cy="8" r="1.8"/><circle cx="10" cy="5.5" r="1.8"/><circle cx="14" cy="5.5" r="1.8"/><circle cx="18" cy="8" r="1.8"/></svg></span>
+        <span class="sol__txt"><b>PetFlow</b><small>Gestão para pet shops</small></span>
+        <span class="status-tag status-tag--pronto">Pronto</span>
+      </a>
+      <a href="#" class="sol entra" data-servico="Solução SaaS Restaurante">
+        <span class="elo__icone"><svg viewBox="0 0 24 24"><path d="M7 3v8M5 3v4a2 2 0 0 0 4 0V3M7 11v10M17 3c-2 1-3 4-3 7h3v11"/></svg></span>
+        <span class="sol__txt"><b>SaaS Restaurante</b><small>Pedidos, cozinha e cardápio QR</small></span>
+        <span class="status-tag status-tag--pronto">Pronto</span>
+      </a>
+      <a href="#" class="sol entra" data-servico="Solução Painel Digital (filas e painéis)">
+        <span class="elo__icone"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 9h4M7 12h7"/></svg></span>
+        <span class="sol__txt"><b>Painel Digital</b><small>Filas e painéis de atendimento</small></span>
+        <span class="status-tag status-tag--pronto">Base adaptável</span>
+      </a>
+      <a href="#" class="sol entra" data-servico="Solução Burger Bot (pedidos pelo WhatsApp)">
+        <span class="elo__icone"><svg viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="11" rx="3"/><path d="M12 4v4M9 13v.01M15 13v.01M9 16h6"/></svg></span>
+        <span class="sol__txt"><b>Burger Bot</b><small>Pedidos pelo WhatsApp com PIX</small></span>
+        <span class="status-tag status-tag--pronto">Pronto</span>
+      </a>
+      <a href="#" class="sol entra" data-servico="Solução Affiliate Bot (ofertas automáticas)">
+        <span class="elo__icone"><svg viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></span>
+        <span class="sol__txt"><b>Affiliate Bot</b><small>Ofertas automáticas no Telegram</small></span>
+        <span class="status-tag status-tag--pronto">Pronto</span>
+      </a>
+      <a href="#" class="sol entra" data-servico="Solução TikTok Pipeline (vídeos com IA)">
+        <span class="elo__icone"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></svg></span>
+        <span class="sol__txt"><b>TikTok Pipeline</b><small>Vídeos curtos com IA</small></span>
+        <span class="status-tag status-tag--pronto">Pronto</span>
+      </a>
+      <a href="#" class="sol entra" data-servico="Solução AtlasOps AI (atendimento com IA)">
+        <span class="elo__icone"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></span>
+        <span class="sol__txt"><b>AtlasOps AI</b><small>Atendimento com IA</small></span>
+        <span class="status-tag status-tag--dev">Em desenvolvimento</span>
+      </a>
+    </div>
+
     <!-- ===== SERVIÇOS ===== -->
     <h2 class="titulo-secao entra" style="animation-delay:.36s">O que eu faço</h2>
     <div class="servicos-bio">
@@ -343,7 +400,11 @@
       </a>
       <a href="#" class="serv entra" style="animation-delay:.52s" data-servico="Sistema sob medida">
         <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM4 10h16M9 10v9"/></svg>
-        <b>Quero automatizar meu negócio</b><small>Sistema sob medida · <em>sob consulta</em></small>
+        <b>Quero organizar minha gestão</b><small>Sistema sob medida · <em>sob consulta</em></small>
+      </a>
+      <a href="#" class="serv serv--largo entra" style="animation-delay:.54s" data-servico="Automação ou bot">
+        <svg viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="11" rx="3"/><path d="M12 4v4M9 13v.01M15 13v.01M9 16h6"/></svg>
+        <b>Quero automatizar meu atendimento</b><small>Bots de WhatsApp e Telegram · <em>sob consulta</em></small>
       </a>
     </div>
 
