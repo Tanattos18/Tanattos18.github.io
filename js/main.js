@@ -4,8 +4,10 @@
 const CONFIG = {
   // Só números, com DDI 55 + DDD. Ex: "5562999999999"
   whatsapp: "5562900000000",
-  instagram: "https://instagram.com/seu_usuario",
-  linkedin: "https://linkedin.com/in/seu_usuario",
+  // Deixe "" para esconder o botão da rede no site
+  instagram: "",  // ex: "https://instagram.com/seu_usuario"
+  linkedin: "",   // ex: "https://linkedin.com/in/seu_usuario"
+  email: "",      // ex: "contato@seudominio.com.br"
 };
 
 // Links de WhatsApp: cada botão leva a mensagem do seu data-whatsapp
@@ -16,10 +18,11 @@ document.querySelectorAll("[data-whatsapp]").forEach((el) => {
   el.rel = "noopener";
 });
 
-// Redes sociais
+// Redes sociais e e-mail (esconde as que não foram preenchidas)
 document.querySelectorAll("[data-rede]").forEach((el) => {
-  const url = CONFIG[el.dataset.rede];
-  if (url) el.href = url;
+  const valor = CONFIG[el.dataset.rede];
+  if (!valor) return el.remove();
+  el.href = el.dataset.rede === "email" ? `mailto:${valor}` : valor;
 });
 
 // Menu no celular

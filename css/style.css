@@ -182,6 +182,38 @@ p { margin: 0 0 1em; }
 .extras p { color: var(--texto-suave); font-size: .95rem; }
 .extras__preco { font-family: var(--fonte-titulo); font-size: 1.5rem; font-weight: 700; color: var(--texto) !important; margin: 0; }
 
+/* Tabela de valores */
+.subtitulo { font-size: 1.4rem; margin: 64px 0 20px; }
+.tabela-rolagem { overflow-x: auto; border: 1px solid var(--borda); border-radius: var(--raio); background: var(--superficie); }
+.tabela { width: 100%; border-collapse: collapse; min-width: 680px; }
+.tabela th, .tabela td { text-align: left; padding: 18px 20px; border-bottom: 1px solid var(--borda); vertical-align: top; }
+.tabela th { font-size: .78rem; text-transform: uppercase; letter-spacing: .1em; color: var(--texto-suave); font-weight: 600; }
+.tabela tbody tr:last-child td { border-bottom: 0; }
+.tabela td { color: var(--texto-suave); font-size: .95rem; }
+.tabela td strong { color: var(--texto); }
+.tabela td:nth-child(3) { white-space: nowrap; }
+.tabela__valor { color: var(--destaque) !important; font-family: var(--fonte-titulo); font-weight: 600; white-space: nowrap; }
+
+.duas-colunas { display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; }
+.lista-precos, .lista-checks { list-style: none; padding: 0; margin: 0; }
+.lista-precos li { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px dashed var(--borda); color: var(--texto-suave); }
+.lista-precos b { color: var(--texto); font-family: var(--fonte-titulo); white-space: nowrap; }
+.lista-checks li { padding: 12px 0; border-bottom: 1px solid var(--borda); color: var(--texto-suave); }
+.lista-checks li::before { content: "✓"; color: var(--destaque); margin-right: 10px; font-weight: 700; }
+
+/* Contatos */
+.contatos { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 48px; padding: 0 20px; }
+.contato {
+  display: flex; align-items: center; gap: 12px; text-align: left;
+  padding: 14px 20px; min-width: 200px; text-decoration: none;
+  background: var(--fundo); border: 1px solid var(--borda); border-radius: 14px;
+  transition: border-color .15s, transform .15s;
+}
+.contato:hover { border-color: var(--destaque); transform: translateY(-2px); }
+.contato svg { width: 26px; height: 26px; flex: none; fill: none; stroke: var(--destaque); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.contato b { display: block; font-size: .95rem; }
+.contato small { color: var(--texto-suave); font-size: .8rem; }
+
 /* Sobre */
 .sobre { display: grid; grid-template-columns: 320px 1fr; gap: 64px; align-items: center; }
 .sobre__foto { aspect-ratio: 1; border-radius: 24px; background: var(--superficie); border: 1px solid var(--borda); display: grid; place-items: center; overflow: hidden; }
@@ -266,11 +298,28 @@ details p { color: var(--texto-suave); padding-right: 40px; }
   .hero__grade, .projeto, .sobre { grid-template-columns: 1fr; gap: 40px; }
   .projeto--inverso .projeto__imagem { order: 0; }
   .numeros__grade { grid-template-columns: repeat(2, 1fr); }
+  .duas-colunas { grid-template-columns: 1fr; }
+  .contato { flex: 1 1 100%; }
   .numeros__grade div:nth-child(3) { border-left: 0; }
   .numeros__grade div:nth-child(n+3) { border-top: 1px solid var(--borda); }
   .sobre__foto { max-width: 240px; }
   .secao, .chamada { padding: 72px 0; }
   .projeto { margin-bottom: 64px; }
+}
+
+@media (max-width: 680px) {
+  /* tabela vira cartões empilhados */
+  .tabela-rolagem { overflow: visible; border: 0; background: none; }
+  .tabela { min-width: 0; }
+  .tabela thead { display: none; }
+  .tabela tr { display: block; margin-bottom: 12px; padding: 20px; background: var(--superficie); border: 1px solid var(--borda); border-radius: var(--raio); }
+  .tabela td { display: block; padding: 0; border: 0; }
+  .tabela td:first-child { font-size: 1.1rem; margin-bottom: 6px; }
+  .tabela td:nth-child(2) { margin-bottom: 14px; }
+  .tabela td:nth-child(3), .tabela__valor { display: inline-block; font-size: .9rem; }
+  .tabela td:nth-child(3)::before { content: "Prazo: "; }
+  .tabela td:nth-child(3)::after { content: "·"; margin: 0 8px; color: var(--borda); }
+  .tabela__valor { font-size: 1.05rem; }
 }
 
 @media (max-width: 560px) {
