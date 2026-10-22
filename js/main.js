@@ -3,7 +3,7 @@
 // ============================================================
 const CONFIG = {
   // Só números, com DDI 55 + DDD. Ex: "5562999999999"
-  whatsapp: "5562900000000",
+  whatsapp: "5562991657619",
   // Deixe "" para esconder o botão da rede no site
   instagram: "",  // ex: "https://instagram.com/seu_usuario"
   linkedin: "",   // ex: "https://linkedin.com/in/seu_usuario"
