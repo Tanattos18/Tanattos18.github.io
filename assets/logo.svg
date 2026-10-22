@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Akylla Studio">
+  <rect width="64" height="64" rx="16" fill="#c6f432"/>
+  <path d="M32 13 L49 51 H41.5 L32 29 L22.5 51 H15 Z" fill="#0b0d12"/>
+  <path d="M26 42 H38" stroke="#0b0d12" stroke-width="5" stroke-linecap="round"/>
+</svg>
