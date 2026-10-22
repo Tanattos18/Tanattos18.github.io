@@ -3,19 +3,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Akylla Studio — Sites, páginas de vendas e sistemas sob medida</title>
-  <meta name="description" content="Criação de sites, landing pages, lojas virtuais e sistemas de gestão sob medida para pequenos negócios. Atendimento direto em Goiânia e todo o Brasil.">
+  <title>Akylla Studio | Criação de sites, landing pages e lojas virtuais em Goiânia</title>
+  <meta name="description" content="Sites, páginas de vendas, lojas virtuais e sistemas sob medida para pequenos negócios. Atendimento direto com o desenvolvedor, orçamento grátis e 50% só na entrega. Goiânia e todo o Brasil.">
+  <link rel="canonical" href="https://tanattos18.github.io/">
   <meta name="theme-color" content="#0b0d12">
-  <meta property="og:title" content="Akylla Studio — Sites e sistemas que vendem">
-  <meta property="og:description" content="Sites, páginas de vendas, lojas virtuais e sistemas sob medida para pequenos negócios.">
-  <meta property="og:image" content="assets/img/akyllashop.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://tanattos18.github.io/">
+  <meta property="og:title" content="Akylla Studio | Sites que trazem clientes">
+  <meta property="og:description" content="Sites, páginas de vendas, lojas virtuais e sistemas sob medida. Orçamento grátis pelo WhatsApp.">
+  <meta property="og:image" content="https://tanattos18.github.io/assets/img/akyllashop.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Dados para o Google entender que é uma empresa de serviços -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Akylla Studio",
+    "description": "Criação de sites, landing pages, lojas virtuais e sistemas sob medida.",
+    "url": "https://tanattos18.github.io/",
+    "telephone": "+55 62 99165-7619",
+    "image": "https://tanattos18.github.io/assets/img/akyllashop.jpg",
+    "areaServed": "BR",
+    "address": { "@type": "PostalAddress", "addressLocality": "Goiânia", "addressRegion": "GO", "addressCountry": "BR" },
+    "priceRange": "R$ 900 - R$ 12.000",
+    "sameAs": ["https://github.com/Tanattos18"]
+  }
+  </script>
 </head>
 <body>
+
+  <!-- ===== FAIXA DE AVISO ===== -->
+  <div class="aviso">
+    <span class="ponto"></span>
+    Agenda aberta para novos projetos · <a href="#" data-whatsapp="Olá! Quero garantir uma vaga na agenda.">orçamento grátis pelo WhatsApp</a>
+  </div>
 
   <!-- ===== CABEÇALHO ===== -->
   <header class="topo">
@@ -30,7 +58,7 @@
       <nav id="menu" class="menu">
         <a href="#servicos">Serviços</a>
         <a href="#projetos">Projetos</a>
-        <a href="#processo">Como funciona</a>
+        <a href="#diferenciais">Diferenciais</a>
         <a href="#precos">Preços</a>
         <a href="#duvidas">Dúvidas</a>
         <a href="#contato">Contato</a>
@@ -45,20 +73,23 @@
     <section id="inicio" class="hero">
       <div class="container hero__grade">
         <div>
-          <p class="selo"><span class="ponto"></span> Agenda aberta para novos projetos</p>
-          <h1>Sites e sistemas que fazem seu negócio <em>vender mais</em>.</h1>
+          <p class="selo">Sites · Landing pages · Lojas · Sistemas</p>
+          <h1>Seu negócio merece um site que <em>traz clientes</em>, não só visitas.</h1>
           <p class="hero__texto">
-            Crio páginas de vendas, sites, lojas virtuais e sistemas de gestão sob medida.
-            Do primeiro rascunho ao site no ar, com atendimento direto comigo, sem intermediário.
+            Crio sites, páginas de vendas, lojas virtuais e sistemas pensados para uma coisa:
+            transformar quem chega pelo Google e pelo Instagram em <strong>cliente falando com você no WhatsApp</strong>.
           </p>
           <div class="hero__acoes">
-            <a href="#" class="btn" data-whatsapp="Olá! Vi seu portfólio e quero um orçamento.">Pedir orçamento no WhatsApp</a>
-            <a href="#projetos" class="btn btn--fantasma">Ver projetos</a>
+            <a href="#" class="btn btn--grande" data-whatsapp="Olá! Vi seu portfólio e quero um orçamento.">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/></svg>
+              Quero meu orçamento grátis
+            </a>
+            <a href="#projetos" class="btn btn--fantasma btn--grande">Ver projetos no ar</a>
           </div>
-          <ul class="checks">
-            <li>Design responsivo</li>
-            <li>Otimizado para o Google</li>
-            <li>Suporte depois da entrega</li>
+          <ul class="confianca">
+            <li><b>Orçamento grátis</b><span>sem compromisso</span></li>
+            <li><b>50% só na entrega</b><span>depois de aprovar</span></li>
+            <li><b>Direto com o dev</b><span>sem intermediário</span></li>
           </ul>
         </div>
 
@@ -71,56 +102,113 @@
             <div class="janela__barra"><i></i><i></i><i></i><span>akyllashop.com</span></div>
             <img src="assets/img/akyllashop.jpg" alt="">
           </div>
+          <div class="chip chip--1">
+            <span class="chip__icone chip__icone--verde">
+              <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/></svg>
+            </span>
+            <span><b>Novo contato</b><small>veio pelo site</small></span>
+          </div>
+          <div class="chip chip--2">
+            <span class="chip__icone">
+              <svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></svg>
+            </span>
+            <span><b>Site no ar</b><small>celular, tablet e PC</small></span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== NÚMEROS ===== -->
-    <section class="numeros">
-      <div class="container numeros__grade">
-        <div><strong>2</strong><span>produtos próprios no ar</span></div>
-        <div><strong>100%</strong><span>responsivo: celular, tablet e PC</span></div>
-        <div><strong>7 dias</strong><span>prazo médio de uma landing page</span></div>
-        <div><strong>1:1</strong><span>atendimento direto com o dev</span></div>
+    <!-- ===== PARA QUEM ===== -->
+    <section class="faixa" aria-label="Para quem eu trabalho">
+      <div class="faixa__trilho">
+        <div class="faixa__itens">
+          <span>Lojas</span><span>Restaurantes</span><span>Clínicas</span><span>Salões de beleza</span>
+          <span>Prestadores de serviço</span><span>Profissionais liberais</span><span>Infoprodutores</span><span>Assistências técnicas</span>
+        </div>
+        <div class="faixa__itens" aria-hidden="true">
+          <span>Lojas</span><span>Restaurantes</span><span>Clínicas</span><span>Salões de beleza</span>
+          <span>Prestadores de serviço</span><span>Profissionais liberais</span><span>Infoprodutores</span><span>Assistências técnicas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DORES ===== -->
+    <section class="secao">
+      <div class="container">
+        <div class="cabecalho">
+          <p class="rotulo">Você se identifica?</p>
+          <h2>Seu negócio pode estar perdendo clientes todos os dias</h2>
+        </div>
+        <div class="dores">
+          <article class="dor">
+            <span class="dor__x">✕</span>
+            <h3>Depende só do Instagram</h3>
+            <p>Se o algoritmo muda ou a conta cai, seus clientes somem junto. Um site é seu e não depende de ninguém.</p>
+          </article>
+          <article class="dor">
+            <span class="dor__x">✕</span>
+            <h3>Ninguém te acha no Google</h3>
+            <p>Quem procura "seu serviço + sua cidade" encontra o concorrente, porque ele tem site e você não.</p>
+          </article>
+          <article class="dor">
+            <span class="dor__x">✕</span>
+            <h3>Site antigo que não vende</h3>
+            <p>Lento, quebrado no celular, sem botão de contato. O cliente desiste antes de falar com você.</p>
+          </article>
+          <article class="dor">
+            <span class="dor__x">✕</span>
+            <h3>Controle no caderno</h3>
+            <p>Vendas, estoque e agenda em papel ou planilha solta. Dá trabalho e o dinheiro escapa sem você ver.</p>
+          </article>
+        </div>
+        <p class="dores__virada">A boa notícia: <strong>tudo isso tem solução</strong>, e ela cabe no orçamento de um pequeno negócio.</p>
       </div>
     </section>
 
     <!-- ===== SERVIÇOS ===== -->
-    <section id="servicos" class="secao">
+    <section id="servicos" class="secao secao--alt">
       <div class="container">
-        <p class="rotulo">Serviços</p>
-        <h2>O que eu posso construir para você</h2>
+        <div class="cabecalho">
+          <p class="rotulo">Serviços</p>
+          <h2>A solução certa para cada momento do seu negócio</h2>
+        </div>
         <div class="cartoes">
           <article class="cartao">
             <div class="cartao__icone"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H4zM8 20h8M12 16v4"/></svg></div>
-            <h3>Landing page / Página de vendas</h3>
-            <p>Uma página focada em um único objetivo: vender seu produto, captar contatos ou divulgar um lançamento.</p>
+            <h3>Página de vendas</h3>
+            <p>Uma página com um único objetivo: vender seu produto ou serviço e levar o cliente direto para o WhatsApp.</p>
+            <p class="cartao__ideal"><b>Ideal para:</b> anúncios, lançamentos, infoprodutos</p>
           </article>
           <article class="cartao">
             <div class="cartao__icone"><svg viewBox="0 0 24 24"><path d="M3 10l9-6 9 6v10H3zM9 20v-6h6v6"/></svg></div>
             <h3>Site institucional</h3>
-            <p>A presença profissional da sua empresa na internet: quem você é, o que faz e como falar com você.</p>
+            <p>Sua empresa aparecendo no Google com cara de profissional: quem você é, o que faz e como te contratar.</p>
+            <p class="cartao__ideal"><b>Ideal para:</b> clínicas, escritórios, prestadores</p>
           </article>
           <article class="cartao">
             <div class="cartao__icone"><svg viewBox="0 0 24 24"><path d="M5 7h14l-1.5 11h-11zM9 7a3 3 0 0 1 6 0"/></svg></div>
             <h3>Loja virtual</h3>
-            <p>Catálogo, carrinho, pagamento via PIX e cartão e pedidos organizados para você vender 24 horas por dia.</p>
+            <p>Seus produtos à venda 24 horas por dia, com carrinho, PIX e cartão, sem pagar mensalidade de plataforma.</p>
+            <p class="cartao__ideal"><b>Ideal para:</b> lojas físicas que querem vender online</p>
           </article>
           <article class="cartao">
             <div class="cartao__icone"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM4 10h16M9 10v9"/></svg></div>
             <h3>Sistema sob medida</h3>
-            <p>Controle de vendas, estoque, caixa, agenda e clientes, feito do jeito que o seu negócio funciona.</p>
+            <p>Vendas, estoque, caixa, agenda e clientes num só lugar, feito do jeito que o seu negócio funciona.</p>
+            <p class="cartao__ideal"><b>Ideal para:</b> quem cresceu e se perdeu nas planilhas</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- ===== PROJETOS ===== -->
-    <section id="projetos" class="secao secao--alt">
+    <section id="projetos" class="secao">
       <div class="container">
-        <p class="rotulo">Projetos</p>
-        <h2>Trabalhos em produção</h2>
-        <p class="secao__intro">Projetos reais, no ar e sendo usados todos os dias.</p>
+        <div class="cabecalho">
+          <p class="rotulo">Projetos</p>
+          <h2>Não é mockup: são projetos reais, no ar</h2>
+          <p class="secao__intro">Clique e navegue. Do jeito que seu cliente vai navegar no seu.</p>
+        </div>
 
         <article class="projeto">
           <a class="projeto__imagem" href="https://akyllashop.com" target="_blank" rel="noopener">
@@ -129,10 +217,14 @@
           <div class="projeto__info">
             <p class="projeto__tipo">Loja virtual · E-commerce</p>
             <h3>Akylla Shop</h3>
-            <p>Loja de tecnologia e acessórios em Goiânia: catálogo de smartwatches, drones, áudio e informática,
-              com sacola, pagamento via PIX, acompanhamento de pedidos e atendimento pelo WhatsApp.</p>
+            <dl class="caso">
+              <dt>Desafio</dt>
+              <dd>Vender eletrônicos e acessórios online em Goiânia sem depender de marketplace e das taxas dele.</dd>
+              <dt>Solução</dt>
+              <dd>Loja própria com catálogo por categoria, sacola, pagamento via PIX, área "Meus pedidos" e atendimento pelo WhatsApp.</dd>
+            </dl>
             <ul class="tags"><li>Catálogo</li><li>Carrinho</li><li>PIX</li><li>Meus pedidos</li><li>SEO</li></ul>
-            <a href="https://akyllashop.com" target="_blank" rel="noopener" class="link-seta">Ver site no ar</a>
+            <a href="https://akyllashop.com" target="_blank" rel="noopener" class="link-seta">Navegar na loja</a>
           </div>
         </article>
 
@@ -143,25 +235,78 @@
           <div class="projeto__info">
             <p class="projeto__tipo">Sistema web · SaaS</p>
             <h3>Akylla Gestão</h3>
-            <p>Sistema online de gestão para comércio e serviços: PDV, caixa, estoque, contas a pagar e receber,
-              agenda e lembretes por WhatsApp, tudo pelo navegador e sem instalar nada.</p>
-            <ul class="tags"><li>PDV</li><li>Estoque</li><li>Financeiro</li><li>Agenda</li><li>Planos de assinatura</li></ul>
-            <a href="https://akyllagestao.com.br" target="_blank" rel="noopener" class="link-seta">Ver site no ar</a>
+            <dl class="caso">
+              <dt>Desafio</dt>
+              <dd>Pequenos comércios controlando caixa, estoque e contas em caderno e planilhas soltas.</dd>
+              <dt>Solução</dt>
+              <dd>Sistema online com PDV, caixa, estoque, contas a pagar e receber, agenda e lembretes por WhatsApp. Funciona no navegador, sem instalar nada.</dd>
+            </dl>
+            <ul class="tags"><li>PDV</li><li>Estoque</li><li>Financeiro</li><li>Agenda</li><li>Assinaturas</li></ul>
+            <a href="https://akyllagestao.com.br" target="_blank" rel="noopener" class="link-seta">Conhecer o sistema</a>
           </div>
         </article>
+
+        <div class="cta-meio">
+          <p><strong>Quer um projeto assim para o seu negócio?</strong> Me conte sua ideia e receba uma proposta.</p>
+          <a href="#" class="btn" data-whatsapp="Olá! Vi seus projetos e quero algo parecido para o meu negócio.">Quero algo assim</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIFERENCIAIS ===== -->
+    <section id="diferenciais" class="secao secao--alt">
+      <div class="container">
+        <div class="cabecalho">
+          <p class="rotulo">Diferenciais</p>
+          <h2>Por que trabalhar comigo e não com uma plataforma pronta</h2>
+        </div>
+        <div class="diferenciais">
+          <div class="diferencial">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+            <h3>Você fala com quem faz</h3>
+            <p>Sem atendente, sem agência no meio. A pessoa que te atende é a que escreve o código.</p>
+          </div>
+          <div class="diferencial">
+            <svg viewBox="0 0 24 24"><path d="M12 2l2.6 6.3L21 9l-5 4.4L17.5 20 12 16.6 6.5 20 8 13.4 3 9l6.4-.7z"/></svg>
+            <h3>Feito sob medida</h3>
+            <p>Nada de template genérico igual ao do concorrente. Cada projeto é pensado para o seu público.</p>
+          </div>
+          <div class="diferencial">
+            <svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg>
+            <h3>Pensado para o celular</h3>
+            <p>A maioria dos seus clientes vai abrir pelo celular. O layout começa por ele.</p>
+          </div>
+          <div class="diferencial">
+            <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/></svg>
+            <h3>Pronto para o Google</h3>
+            <p>Estrutura, títulos e velocidade otimizados para você aparecer nas buscas da sua região.</p>
+          </div>
+          <div class="diferencial">
+            <svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+            <h3>Tudo fica no seu nome</h3>
+            <p>Domínio, hospedagem e conteúdo são seus. Você não fica preso a mim nem a nenhuma plataforma.</p>
+          </div>
+          <div class="diferencial">
+            <svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 16 0v5a2 2 0 0 1-2 2h-2v-6h4M4 13h4v6H6a2 2 0 0 1-2-2z"/></svg>
+            <h3>Suporte de verdade</h3>
+            <p>30 dias de suporte grátis depois da entrega e manutenção mensal para quem quiser tranquilidade.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ===== PROCESSO ===== -->
     <section id="processo" class="secao">
       <div class="container">
-        <p class="rotulo">Como funciona</p>
-        <h2>Do primeiro contato ao site no ar</h2>
+        <div class="cabecalho">
+          <p class="rotulo">Como funciona</p>
+          <h2>Do primeiro "oi" ao site no ar em 4 passos</h2>
+        </div>
         <ol class="passos">
-          <li><span>01</span><h3>Conversa</h3><p>Entendo seu negócio, seu público e o que você quer alcançar.</p></li>
-          <li><span>02</span><h3>Proposta</h3><p>Você recebe escopo, prazo e valor por escrito. Sem surpresas.</p></li>
-          <li><span>03</span><h3>Criação</h3><p>Desenvolvo e mostro o andamento. Você aprova cada etapa.</p></li>
-          <li><span>04</span><h3>Entrega</h3><p>Site no ar, domínio configurado e suporte para o que precisar.</p></li>
+          <li><span>01</span><h3>Conversa</h3><p>Pelo WhatsApp ou videochamada, entendo seu negócio, seu público e seu objetivo.</p></li>
+          <li><span>02</span><h3>Proposta</h3><p>Você recebe escopo, prazo e valor por escrito. Sem letra miúda.</p></li>
+          <li><span>03</span><h3>Criação</h3><p>Mostro o andamento e você aprova cada etapa antes de seguir.</p></li>
+          <li><span>04</span><h3>Entrega</h3><p>Site no ar, domínio configurado e você só paga o restante depois de aprovar.</p></li>
         </ol>
       </div>
     </section>
@@ -170,49 +315,57 @@
          Os valores abaixo são um ponto de partida. Ajuste conforme seu custo/hora. -->
     <section id="precos" class="secao secao--alt">
       <div class="container">
-        <p class="rotulo">Preços</p>
-        <h2>Investimento</h2>
-        <p class="secao__intro">Valores iniciais. Cada projeto recebe um orçamento fechado depois da nossa conversa.</p>
+        <div class="cabecalho">
+          <p class="rotulo">Investimento</p>
+          <h2>Preço justo, combinado antes de começar</h2>
+          <p class="secao__intro">Valores iniciais. Depois da nossa conversa você recebe um orçamento fechado, sem surpresas no meio do caminho.</p>
+        </div>
 
         <div class="planos">
           <article class="plano">
             <h3>Página de vendas</h3>
+            <p class="plano__para">Para quem quer vender um produto ou serviço específico</p>
             <p class="plano__preco"><small>a partir de</small> R$ 900</p>
+            <p class="plano__parcela">ou em até 10x no cartão</p>
             <ul>
-              <li>1 página completa</li>
+              <li>1 página completa e persuasiva</li>
               <li>Botão de WhatsApp e formulário</li>
-              <li>Pronta para anúncios</li>
+              <li>Pronta para anúncios (pixel)</li>
               <li>2 rodadas de ajustes</li>
               <li>Entrega em até 7 dias</li>
             </ul>
-            <a href="#" class="btn btn--fantasma" data-whatsapp="Olá! Quero um orçamento de página de vendas.">Quero esse</a>
+            <a href="#" class="btn btn--fantasma" data-whatsapp="Olá! Quero um orçamento de página de vendas.">Quero uma página</a>
           </article>
 
           <article class="plano plano--destaque">
-            <p class="plano__selo">Mais pedido</p>
+            <p class="plano__selo">Mais escolhido</p>
             <h3>Site institucional</h3>
+            <p class="plano__para">Para empresas que querem ser encontradas no Google</p>
             <p class="plano__preco"><small>a partir de</small> R$ 1.800</p>
+            <p class="plano__parcela">ou em até 10x no cartão</p>
             <ul>
               <li>Até 5 páginas</li>
               <li>Otimizado para o Google</li>
-              <li>Integração com Instagram e mapa</li>
-              <li>Configuração de domínio e e-mail</li>
+              <li>Instagram, mapa e WhatsApp integrados</li>
+              <li>Domínio e e-mail profissional configurados</li>
               <li>30 dias de suporte grátis</li>
             </ul>
-            <a href="#" class="btn" data-whatsapp="Olá! Quero um orçamento de site institucional.">Quero esse</a>
+            <a href="#" class="btn" data-whatsapp="Olá! Quero um orçamento de site institucional.">Quero meu site</a>
           </article>
 
           <article class="plano">
             <h3>Loja virtual</h3>
+            <p class="plano__para">Para quem quer vender online sem pagar plataforma</p>
             <p class="plano__preco"><small>a partir de</small> R$ 4.500</p>
+            <p class="plano__parcela">ou em até 12x no cartão</p>
             <ul>
               <li>Catálogo com categorias</li>
-              <li>Carrinho e pagamento PIX/cartão</li>
+              <li>Carrinho, PIX e cartão</li>
               <li>Painel para cadastrar produtos</li>
               <li>Acompanhamento de pedidos</li>
               <li>Treinamento de uso</li>
             </ul>
-            <a href="#" class="btn btn--fantasma" data-whatsapp="Olá! Quero um orçamento de loja virtual.">Quero esse</a>
+            <a href="#" class="btn btn--fantasma" data-whatsapp="Olá! Quero um orçamento de loja virtual.">Quero minha loja</a>
           </article>
         </div>
 
@@ -220,7 +373,7 @@
           <div>
             <h3>Sistema sob medida</h3>
             <p>Gestão, agendamento, controle interno. Orçamento conforme as funcionalidades.</p>
-            <a href="#" class="link-seta" data-whatsapp="Olá! Quero conversar sobre um sistema sob medida.">Sob consulta</a>
+            <a href="#" class="link-seta" data-whatsapp="Olá! Quero conversar sobre um sistema sob medida.">Conversar sobre meu sistema</a>
           </div>
           <div>
             <h3>Manutenção mensal</h3>
@@ -288,11 +441,22 @@
             <ul class="lista-checks">
               <li>Orçamento gratuito e sem compromisso</li>
               <li>50% na aprovação e 50% na entrega</li>
-              <li>PIX, transferência ou cartão em até 12x (com juros da maquininha)</li>
+              <li>PIX, transferência ou cartão (com juros da maquininha)</li>
               <li>Proposta por escrito com escopo, prazo e valor</li>
               <li>Domínio e hospedagem ficam no nome do cliente</li>
               <li>30 dias de suporte grátis após a entrega</li>
             </ul>
+          </div>
+        </div>
+
+        <div class="garantia">
+          <div class="garantia__selo" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <div>
+            <h3>Compromisso de aprovação</h3>
+            <p>Você acompanha cada etapa e pede os ajustes combinados na proposta. A segunda metade do pagamento
+              só acontece quando você aprova o site pronto. Seu risco é mínimo.</p>
           </div>
         </div>
       </div>
@@ -301,17 +465,16 @@
     <!-- ===== SOBRE ===== -->
     <section id="sobre" class="secao">
       <div class="container sobre">
-        <div class="sobre__foto" aria-hidden="true">
-          <!-- Troque por uma foto sua: <img src="assets/img/foto.jpg" alt="Sua foto"> -->
-          <img src="assets/logo.svg" alt="">
+        <div class="sobre__foto">
+          <img src="assets/img/foto.jpg" alt="Foto do desenvolvedor do Akylla Studio" width="460" height="460" loading="lazy">
+          <p class="sobre__selo"><span class="ponto"></span> Desenvolvedor web · Goiânia</p>
         </div>
         <div>
           <p class="rotulo">Sobre</p>
-          <h2>Quem está por trás dos projetos</h2>
-          <p>Sou desenvolvedor web em Goiânia e crio sites e sistemas para pequenos negócios.
-            Antes de fazer para clientes, construí meus próprios produtos, uma loja virtual e um sistema de gestão,
-            e sei na prática o que um site precisa ter para trazer resultado.</p>
-          <p>Você fala direto comigo do começo ao fim: sem agência, sem atendente, sem enrolação.</p>
+          <h2>Antes de fazer para clientes, fiz para mim</h2>
+          <p>Sou desenvolvedor web em Goiânia. Construí do zero meus próprios produtos, uma loja virtual e um sistema de gestão,
+            e sei na prática o que um site precisa ter para trazer resultado, porque eu também dependo disso.</p>
+          <p>Meu trabalho é simples: entender seu negócio, construir algo que funcione e continuar por perto depois da entrega.</p>
           <div class="redes">
             <a href="https://github.com/Tanattos18" target="_blank" rel="noopener">GitHub</a>
             <a href="#" data-rede="instagram" target="_blank" rel="noopener">Instagram</a>
@@ -325,19 +488,33 @@
     <!-- ===== DÚVIDAS ===== -->
     <section id="duvidas" class="secao secao--alt">
       <div class="container container--estreito">
-        <p class="rotulo">Dúvidas</p>
-        <h2>Perguntas frequentes</h2>
+        <div class="cabecalho">
+          <p class="rotulo">Dúvidas</p>
+          <h2>Perguntas frequentes</h2>
+        </div>
+        <details>
+          <summary>Já tenho Instagram. Preciso mesmo de um site?</summary>
+          <p>O Instagram é ótimo para engajar, mas você não controla quem vê seus posts e não aparece quando alguém procura seu serviço no Google. O site trabalha 24 horas, é seu e leva o cliente direto para o seu WhatsApp. Os dois juntos vendem muito mais.</p>
+        </details>
+        <details>
+          <summary>Por que não usar Wix ou uma plataforma pronta?</summary>
+          <p>Plataformas prontas cobram mensalidade para sempre, limitam o que você pode fazer e deixam seu site parecido com milhares de outros. Aqui o site é feito sob medida, fica no seu nome e você não paga mensalidade de plataforma.</p>
+        </details>
         <details>
           <summary>Quanto tempo leva para ficar pronto?</summary>
           <p>Uma página de vendas fica pronta em cerca de 7 dias. Sites institucionais levam de 2 a 3 semanas, e lojas virtuais e sistemas dependem do tamanho do projeto. O prazo exato vai na proposta.</p>
         </details>
         <details>
           <summary>Como funciona o pagamento?</summary>
-          <p>50% na aprovação da proposta e 50% na entrega. Aceito PIX, transferência e cartão (com acréscimo da maquininha).</p>
+          <p>50% na aprovação da proposta e 50% só na entrega, depois que você aprovar. Aceito PIX, transferência e cartão (com acréscimo da maquininha).</p>
+        </details>
+        <details>
+          <summary>Não tenho textos nem fotos. E agora?</summary>
+          <p>Sem problema. Eu te guio com um roteiro simples de perguntas e organizo os textos. Também posso usar imagens profissionais licenciadas ou o adicional de textos persuasivos.</p>
         </details>
         <details>
           <summary>Preciso já ter domínio e hospedagem?</summary>
-          <p>Não. Eu ajudo a registrar o domínio (ex: seunegocio.com.br) e cuido da hospedagem para você.</p>
+          <p>Não. Eu ajudo a registrar o domínio (ex: seunegocio.com.br) no seu nome e cuido da hospedagem para você.</p>
         </details>
         <details>
           <summary>Vou conseguir alterar o site depois?</summary>
@@ -353,9 +530,14 @@
     <!-- ===== CONTATO ===== -->
     <section id="contato" class="chamada">
       <div class="container chamada__caixa">
-        <h2>Vamos tirar seu projeto do papel?</h2>
-        <p>Me conte sua ideia. O orçamento é gratuito e sem compromisso.</p>
-        <a href="#" class="btn" data-whatsapp="Olá! Vi seu portfólio e quero um orçamento.">Falar no WhatsApp</a>
+        <img class="chamada__avatar" src="assets/img/foto.jpg" alt="" width="88" height="88" loading="lazy">
+        <p class="rotulo">Próximo passo · fale direto comigo</p>
+        <h2>Enquanto você pensa, seu concorrente já está no Google.</h2>
+        <p>Me chama no WhatsApp, conta sua ideia em 2 minutos e receba uma proposta sem compromisso.</p>
+        <a href="#" class="btn btn--grande" data-whatsapp="Olá! Vi seu portfólio e quero um orçamento.">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/></svg>
+          Quero meu orçamento grátis
+        </a>
 
         <div class="contatos">
           <a href="#" class="contato" data-whatsapp="Olá! Vi seu portfólio.">
@@ -385,16 +567,26 @@
   </main>
 
   <footer class="rodape">
-    <div class="container rodape__linha">
-      <a href="#inicio" class="marca">
-        <img src="assets/logo.svg" alt="" width="28" height="28">
-        <span>Akylla <b>Studio</b></span>
-      </a>
-      <p>© <span id="ano">2026</span> Akylla Studio · Goiânia/GO</p>
+    <div class="container rodape__grade">
+      <div>
+        <a href="#inicio" class="marca">
+          <img src="assets/logo.svg" alt="" width="28" height="28">
+          <span>Akylla <b>Studio</b></span>
+        </a>
+        <p>Sites, páginas de vendas, lojas virtuais e sistemas sob medida para pequenos negócios.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#precos">Preços</a>
+        <a href="#duvidas">Dúvidas</a>
+      </nav>
+      <p class="rodape__copy">© <span id="ano">2026</span> Akylla Studio · Goiânia/GO · Atendimento em todo o Brasil</p>
     </div>
   </footer>
 
   <a href="#" class="whats-flutuante" data-whatsapp="Olá! Vi seu portfólio e quero um orçamento." aria-label="Falar no WhatsApp">
+    <span class="whats-flutuante__balao">Orçamento grátis</span>
     <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.6 12.6c-.2.6-1.1 1.1-1.6 1.2-.4 0-.9.1-2.9-.7-2.4-1-4-3.4-4.1-3.6-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.3.5-.3.6-.3h.5c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .5l-.4.6-.3.3c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1.9 2 1.2 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.2.1.6-.1 1.1z"/></svg>
   </a>
 

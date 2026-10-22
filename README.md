@@ -31,5 +31,5 @@ python -m http.server 8000
 
 1. Envie os arquivos para a branch `main`.
 2. No GitHub: **Settings → Pages → Build and deployment → Source: Deploy from a branch → `main` / `(root)`**.
-3. Em 1–2 minutos o site fica em `https://tanattos18.github.io/Portifolio_Empresarial/`.
+3. Em 1–2 minutos o site fica em `https://tanattos18.github.io/`.
 4. (Opcional) Domínio próprio: em **Settings → Pages → Custom domain**, informe o domínio e crie no seu registrador um registro `CNAME` apontando para `tanattos18.github.io`.

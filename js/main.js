@@ -29,6 +29,8 @@ document.querySelectorAll("[data-rede]").forEach((el) => {
 const botaoMenu = document.querySelector(".menu-btn");
 const menu = document.getElementById("menu");
 botaoMenu.addEventListener("click", () => {
+  // o menu começa logo abaixo do cabeçalho (a faixa de aviso muda essa altura)
+  menu.style.top = `${document.querySelector(".topo").getBoundingClientRect().bottom}px`;
   const aberto = menu.classList.toggle("aberto");
   botaoMenu.setAttribute("aria-expanded", aberto);
   document.body.classList.toggle("sem-rolagem", aberto);
@@ -58,7 +60,7 @@ const observador = new IntersectionObserver(
     }),
   { threshold: 0.12 }
 );
-document.querySelectorAll(".cartao, .projeto, .passos li, .plano, details").forEach((el) => {
+document.querySelectorAll(".cartao, .dor, .projeto, .diferencial, .passos li, .plano, .garantia, details").forEach((el) => {
   el.classList.add("revelar");
   observador.observe(el);
 });
