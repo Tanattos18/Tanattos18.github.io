@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akyllastudio.github.io/sitemap.xml
