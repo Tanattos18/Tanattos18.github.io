@@ -47,6 +47,18 @@
 
     .bio { max-width: 480px; margin: 0 auto; padding: 20px 16px 48px; }
 
+    /* No computador: perfil fixo à esquerda, conteúdo à direita */
+    @media (min-width: 960px) {
+      .bio { max-width: 1080px; padding: 32px 32px 56px; }
+      .barra { margin-bottom: 28px; }
+      .bio__grade { display: grid; grid-template-columns: 420px 1fr; gap: 40px; align-items: start; }
+      .bio__esq { position: sticky; top: 32px; }
+      .bio__dir > .titulo-secao:first-child { margin-top: 0; }
+      .servicos-bio { grid-template-columns: repeat(2, 1fr); }
+      .bio__dir .elo { margin-bottom: 10px; }
+      .rodape-bio { margin-top: 56px; }
+    }
+
     /* ---------- Topo: marca + compartilhar ---------- */
     .barra { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
     .barra .marca { font-size: 1.05rem; }
@@ -210,7 +222,7 @@
     }
   </style>
 </head>
-<body>
+<body data-origem="página de links">
   <div class="fundo" aria-hidden="true"><span class="orbe orbe--1"></span><span class="orbe orbe--2"></span><span class="orbe orbe--3"></span></div>
 
   <main class="bio">
@@ -225,6 +237,8 @@
       </button>
     </div>
 
+    <div class="bio__grade">
+    <div class="bio__esq">
     <!-- ===== PERFIL ===== -->
     <section class="perfil entra" style="animation-delay:.08s">
       <div class="capa" aria-hidden="true"><img src="assets/logo-marca.png" alt=""></div>
@@ -234,13 +248,13 @@
       </div>
       <div class="perfil__corpo">
         <h1>Akylla <span>Studio</span></h1>
-        <p class="perfil__cargo">Sites, landing pages, lojas e sistemas · Goiânia/GO</p>
+        <p class="perfil__cargo">Sites, lojas virtuais e sistemas para pequenos negócios que querem crescer · Goiânia/GO</p>
         <span class="status"><span class="ponto"></span> Agenda aberta para novos projetos</span>
 
         <div class="numeros-bio">
-          <div><strong>2</strong><span>projetos no ar</span></div>
-          <div><strong>4</strong><span>tipos de solução</span></div>
-          <div><strong>50%</strong><span>só na entrega</span></div>
+          <div><strong>2</strong><span>produtos próprios no ar</span></div>
+          <div><strong>1:1</strong><span>direto com o dev</span></div>
+          <div><strong>2 etapas</strong><span>de pagamento</span></div>
         </div>
 
         <nav class="redes-bio" aria-label="Redes sociais">
@@ -275,25 +289,38 @@
     <!-- ===== CHAMADA PRINCIPAL ===== -->
     <a href="#" class="cta entra" style="animation-delay:.16s" data-whatsapp="Olá! Vim pelo Instagram e quero um orçamento.">
       <span class="cta__icone"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3zm4.6 12.6c-.2.6-1.1 1.1-1.6 1.2-.4 0-.9.1-2.9-.7-2.4-1-4-3.4-4.1-3.6-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.3.5-.3.6-.3h.5c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .5l-.4.6-.3.3c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1.9 2 1.2 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.4.2.5.3.1.2.1.6-.1 1.1z"/></svg></span>
-      <span><b>Quero meu orçamento grátis</b><small>Fale direto comigo no WhatsApp</small></span>
+      <span><b>Solicitar orçamento gratuito</b><small>Fale direto comigo no WhatsApp</small></span>
       <span class="cta__seta" aria-hidden="true">→</span>
     </a>
-    <p class="nota entra" style="animation-delay:.2s">Sem compromisso · resposta rápida</p>
+    <div class="escolha entra" style="animation-delay:.2s; text-align:center">
+      <p class="escolha__titulo">ou diga o que você precisa:</p>
+      <div class="escolha__opcoes">
+        <a href="#" data-servico="Site institucional">Site</a>
+        <a href="#" data-servico="Página de vendas">Página de vendas</a>
+        <a href="#" data-servico="Loja virtual">Loja virtual</a>
+        <a href="#" data-servico="Sistema sob medida">Sistema</a>
+        <a href="#" data-servico="Ainda não sei, quero uma orientação">Ainda não sei</a>
+      </div>
+    </div>
+    <p class="nota entra" style="animation-delay:.22s; margin-top:14px">Sem compromisso · proposta por escrito · pagamento em 2 etapas</p>
 
+    </div>
+
+    <div class="bio__dir">
     <!-- ===== PROJETOS ===== -->
-    <h2 class="titulo-secao entra" style="animation-delay:.24s">Projetos no ar</h2>
+    <h2 class="titulo-secao entra" style="animation-delay:.24s">Produtos próprios no ar</h2>
     <div class="projetos-bio">
       <a href="https://akyllashop.com" class="proj entra" style="animation-delay:.28s" target="_blank" rel="noopener">
         <img src="assets/img/akyllashop.jpg" alt="Página inicial da Akylla Shop" width="1440" height="900" loading="lazy">
         <span class="proj__info">
-          <span><b>Akylla Shop</b><small>Loja virtual · e-commerce</small></span>
+          <span><b>Akylla Shop</b><small>Produto próprio · loja virtual</small></span>
           <span class="proj__abrir">Ver loja ↗</span>
         </span>
       </a>
       <a href="https://akyllagestao.com.br" class="proj entra" style="animation-delay:.32s" target="_blank" rel="noopener">
         <img src="assets/img/akyllagestao.jpg" alt="Página inicial do Akylla Gestão" width="1440" height="900" loading="lazy">
         <span class="proj__info">
-          <span><b>Akylla Gestão</b><small>Sistema web · SaaS</small></span>
+          <span><b>Akylla Gestão</b><small>Produto próprio · sistema web</small></span>
           <span class="proj__abrir">Ver sistema ↗</span>
         </span>
       </a>
@@ -302,21 +329,21 @@
     <!-- ===== SERVIÇOS ===== -->
     <h2 class="titulo-secao entra" style="animation-delay:.36s">O que eu faço</h2>
     <div class="servicos-bio">
-      <a href="#" class="serv entra" style="animation-delay:.4s" data-whatsapp="Olá! Quero um orçamento de página de vendas.">
+      <a href="#" class="serv entra" style="animation-delay:.4s" data-servico="Página de vendas">
         <svg viewBox="0 0 24 24"><path d="M4 4h16v12H4zM8 20h8M12 16v4"/></svg>
-        <b>Página de vendas</b><small>a partir de <em>R$ 900</em></small>
+        <b>Quero divulgar minha oferta</b><small>Página de vendas · a partir de <em>R$ 900</em></small>
       </a>
-      <a href="#" class="serv entra" style="animation-delay:.44s" data-whatsapp="Olá! Quero um orçamento de site institucional.">
+      <a href="#" class="serv entra" style="animation-delay:.44s" data-servico="Site institucional">
         <svg viewBox="0 0 24 24"><path d="M3 10l9-6 9 6v10H3zM9 20v-6h6v6"/></svg>
-        <b>Site institucional</b><small>a partir de <em>R$ 1.800</em></small>
+        <b>Quero profissionalizar minha empresa</b><small>Site institucional · a partir de <em>R$ 1.800</em></small>
       </a>
-      <a href="#" class="serv entra" style="animation-delay:.48s" data-whatsapp="Olá! Quero um orçamento de loja virtual.">
+      <a href="#" class="serv entra" style="animation-delay:.48s" data-servico="Loja virtual">
         <svg viewBox="0 0 24 24"><path d="M5 7h14l-1.5 11h-11zM9 7a3 3 0 0 1 6 0"/></svg>
-        <b>Loja virtual</b><small>a partir de <em>R$ 4.500</em></small>
+        <b>Quero vender pela internet</b><small>Loja virtual · a partir de <em>R$ 4.500</em></small>
       </a>
-      <a href="#" class="serv entra" style="animation-delay:.52s" data-whatsapp="Olá! Quero conversar sobre um sistema sob medida.">
+      <a href="#" class="serv entra" style="animation-delay:.52s" data-servico="Sistema sob medida">
         <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM4 10h16M9 10v9"/></svg>
-        <b>Sistema sob medida</b><small><em>sob consulta</em></small>
+        <b>Quero automatizar meu negócio</b><small>Sistema sob medida · <em>sob consulta</em></small>
       </a>
     </div>
 
@@ -330,10 +357,17 @@
       <span class="elo__icone"><svg viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></span>
       <span><b>Tabela de preços</b><small>Planos, adicionais e condições</small></span>
     </a>
+    <a href="./#processo" class="elo entra" style="animation-delay:.66s">
+      <span class="elo__icone"><svg viewBox="0 0 24 24"><path d="M4 6h10M4 12h16M4 18h7"/><circle cx="18" cy="6" r="2"/><circle cx="15" cy="18" r="2"/></svg></span>
+      <span><b>Como funciona</b><small>Do primeiro contato à entrega, em 4 passos</small></span>
+    </a>
     <a href="./#duvidas" class="elo entra" style="animation-delay:.68s">
       <span class="elo__icone"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14M12 17v.01"/></svg></span>
       <span><b>Perguntas frequentes</b><small>Prazos, pagamento e como funciona</small></span>
     </a>
+
+    </div>
+    </div>
 
     <footer class="rodape-bio">
       <img src="assets/logo-marca.png" alt="" width="30" height="30">

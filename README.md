@@ -24,13 +24,13 @@ Atendimento direto com o desenvolvedor · Goiânia/GO e todo o Brasil
 | **Página de vendas** | Anúncios, lançamentos, infoprodutos | R$ 900 |
 | **Cardápio / catálogo digital** | Restaurantes, lojas, pedidos pelo WhatsApp | R$ 1.200 |
 | **Site institucional** | Clínicas, escritórios, prestadores de serviço | R$ 1.800 |
-| **Loja virtual** | Lojas que querem vender online sem pagar plataforma | R$ 4.500 |
+| **Loja virtual** | Lojas que querem vender online com loja própria | R$ 4.500 |
 | **Sistema sob medida** | Negócios que cresceram e se perderam nas planilhas | sob consulta |
 | **Manutenção mensal** | Hospedagem, backups e pequenas alterações | R$ 150/mês |
 
 Valores e o que está incluso em cada um: [akyllastudio.github.io/#precos](https://akyllastudio.github.io/#precos)
 
-## Projetos no ar
+## Produtos próprios no ar
 
 <table>
   <tr>
@@ -52,7 +52,7 @@ Valores e o que está incluso em cada um: [akyllastudio.github.io/#precos](https
 1. **Conversa:** entendo seu negócio, seu público e seu objetivo.
 2. **Proposta:** escopo, prazo e valor por escrito.
 3. **Criação:** você acompanha e aprova cada etapa.
-4. **Entrega:** site no ar e o restante pago só depois da sua aprovação.
+4. **Entrega:** site no ar. Pagamento em 2 etapas: 50% para iniciar e 50% na entrega aprovada.
 
 ## Contato
 

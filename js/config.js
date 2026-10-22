@@ -29,3 +29,16 @@ document.querySelectorAll("[data-rede]").forEach((el) => {
   if (!valor) return el.remove();
   el.href = el.dataset.rede === "email" ? `mailto:${valor}` : valor;
 });
+
+// Escolha de serviço: abre o WhatsApp com a mensagem já organizada
+// <a data-servico="Loja virtual"> · a origem vem de <body data-origem="...">
+document.querySelectorAll("[data-servico]").forEach((el) => {
+  const origem = document.body.dataset.origem || "site";
+  const msg =
+    `Olá! Vim pelo ${origem} da Akylla Studio e quero um orçamento.\n\n` +
+    `Preciso de: ${el.dataset.servico}\n` +
+    `Meu objetivo é: `;
+  el.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`;
+  el.target = "_blank";
+  el.rel = "noopener";
+});
