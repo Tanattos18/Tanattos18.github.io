@@ -16,7 +16,8 @@ Site estático (HTML, CSS e JavaScript puro), sem build, hospedado no GitHub Pag
 | WhatsApp, Instagram e LinkedIn | `js/main.js`, objeto `CONFIG` no topo |
 | Textos, preços e projetos | `index.html` (cada seção tem um comentário `<!-- ===== NOME ===== -->`) |
 | Cores e fontes | `css/style.css`, bloco `:root` no topo |
-| Logo e favicon | `assets/logo.svg` e `assets/favicon.svg` |
+| Logo e favicon | `assets/logo-marca.png` (símbolo), `assets/logo-completo*.png` (logo inteiro), `assets/favicon*.png` |
+| Avatar da organização no GitHub | `assets/avatar-organizacao.png` |
 | Prints dos projetos | `assets/img/` |
 
 ## Ver no computador
